@@ -22,7 +22,9 @@ public class CorsConfig {
             registry.addMapping("/**")
                     .allowedOrigins("http://localhost:3000", "http://localhost:5173", "http://localhost:4200", "http://localhost:5173",
                             "http://192.168.3.72:5173",
-                            "http://192.168.3.72:8080" )
+                            "http://192.168.3.72:8080",
+                            "http://localhost",
+                            "http://localhost:80" )
                     .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                     .allowedHeaders("*")
                     .allowCredentials(true);
