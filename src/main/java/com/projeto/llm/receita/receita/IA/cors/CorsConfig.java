@@ -21,8 +21,8 @@ public class CorsConfig {
         public void addCorsMappings(CorsRegistry registry) {
             registry.addMapping("/**")
                     .allowedOrigins("http://localhost:3000", "http://localhost:5173", "http://localhost:4200", "http://localhost:5173",
-                            "http://192.168.3.72:5173",
-                            "http://192.168.3.72:8080",
+                            "http://seu.ip.local:5173",
+                            "http://seu.ip.local:8080",
                             "http://localhost",
                             "http://localhost:80" )
                     .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
